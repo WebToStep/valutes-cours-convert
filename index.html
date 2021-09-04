@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>Document</title>
+</head>
+<body>
+   <div class="wrapper">
+      <h2>Выбирите конвертируимую валюту</h2>
+      <div class="valutes">
+         <input type="radio" name="select" id="option-1" checked>
+         <input type="radio" name="select" id="option-2">
+           <label for="option-1" class="option option-1">
+              <span>Евро</span>
+            </label>
+           <label for="option-2" class="option option-2">
+              <span>Долар</span>
+           </label>
+      </div>
+      <div class="values">
+         <div class="ru">
+            <input type="input" id="rub">
+               <label for='rub' class="money">
+                  <span>Российский рубль(RUB)</span>
+               </label>
+         </div>
+         <div class="calc__reverse js-converter-change-currency"></div>
+         <div class="no-ru">
+            <input type="input" id="converted-money">
+            <label for='converted-money' class="money">
+               <span id="converted-money-span">Европейский евро (EUR)</span>
+            </label>
+         </div>
+      </div>
+      <div class="date">
+         Данные актуальны на: "<span class='today-date'></span>"
+      </div>
+     </div>
+     <script src='./index.js' type="module"></script>
+</body>
+</html>
